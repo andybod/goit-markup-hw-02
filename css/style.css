@@ -2,6 +2,7 @@
   --font-raleway: 'Raleway', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
   --hover-color: #2196f3;
+  --main-btn-hover-color: #188ce8;
   --main-bright-color: #ffffff;
   --dakr-color: #212121;
   --light-color: #757575;
@@ -116,6 +117,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-bright-color);
   cursor: pointer;
+}
+.hero__button:hover,
+.hero__button:focus {
+  background: var(--main-btn-hover-color);
 }
 /* -------------------------------------features------------------------------------------------------- */
 
