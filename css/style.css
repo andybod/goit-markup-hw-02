@@ -1,13 +1,20 @@
 :root {
   --font-raleway: 'Raleway', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
   --hover-color: #2196f3;
-  --white-color: #ffffff;
+  --main-bright-color: #ffffff;
   --dakr-color: #212121;
   --light-color: #757575;
+  --bg-butons-color: #f5f4fa;
+  --bg-section-light: #f5f4fa;
+  --bg--section-dakr: #2f303a;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-roboto);
   color: var(--dakr-color);
+  background: var(--main-bright-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .item {
@@ -21,7 +28,6 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--dakr-color);
 }
 
@@ -43,7 +49,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--hover-color);
 }
 /* -------------------------------------Index.html------------------------------------------------------- */
@@ -65,20 +70,21 @@ body {
 
 .header__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.42;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--dakr-color);
 }
 .header__link:hover,
 .header__link:focus {
   color: var(--hover-color);
 }
+.current {
+  color: var(--hover-color);
+}
 .header__contacts {
 }
 .header__contacts-contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.02em;
   color: var(--light-color);
@@ -90,7 +96,7 @@ body {
 
 /* -------------------------------------Hero------------------------------------------------------- */
 .hero {
-  background: #2f303a;
+  background: var(--bg--section-dakr);
 }
 .hero__title {
   font-weight: 900;
@@ -99,7 +105,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: var(--main-bright-color);
 }
 .hero__button {
   background: var(--hover-color);
@@ -108,7 +114,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--main-bright-color);
   cursor: pointer;
 }
 /* -------------------------------------features------------------------------------------------------- */
@@ -120,16 +126,12 @@ body {
 .features__item {
 }
 .features__item-title {
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--dakr-color);
 }
 .features__item-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--light-color);
 }
 
@@ -147,6 +149,7 @@ body {
 
 /* -------------------------------------Work------------------------------------------------------- */
 .teams {
+  background: var(--bg-section-light);
 }
 .teams__title {
 }
@@ -161,13 +164,11 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--dakr-color);
 }
 .teams__text {
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--light-color);
 }
 /* -------------------------------------Footer------------------------------------------------------- */
@@ -175,7 +176,7 @@ body {
   background: #2f303a;
 }
 .footer__logo span {
-  color: var(--white-color);
+  color: var(--main-bright-color);
 }
 
 .footer__addres {
@@ -187,14 +188,19 @@ body {
 .footer__link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__link:hover,
 .footer__link:focus {
-  color: var(--white-color);
+  color: var(--main-bright-color);
+}
+.footer__link-active {
+  color: var(--main-bright-color);
+}
+.footer__link-active:hover,
+.footer__link-active:focus {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* -------------------------------------portfolio.html------------------------------------------------------- */
@@ -212,6 +218,7 @@ body {
 }
 
 .filtr-portfolio__btn {
+  background: var(--bg-butons-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -223,7 +230,7 @@ body {
 .filtr-portfolio__btn:hover,
 .filtr-portfolio__btn:focus {
   background: var(--hover-color);
-  color: var(--white-color);
+  color: var(--main-bright-color);
 }
 /* -------------------------------------Portfolio-ggellery------------------------------------------------------ */
 
@@ -244,6 +251,5 @@ body {
 .gallery-portfolio__text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--light-color);
 }
